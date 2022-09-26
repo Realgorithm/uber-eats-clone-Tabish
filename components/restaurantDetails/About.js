@@ -5,18 +5,18 @@ const yelpRestaurantInfo = {
   image:
     "https://imgs.search.brave.com/2zFwnRxXxjK3keHzfxj11rSyu099QcfuHAr8Z3H_31k/rs:fit:632:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5F/Q3Y1ZlBiVmVCOXNw/REh6ZktqSXZRSGFG/aiZwaWQ9QXBp",
   price: "$$",
-  reviews: "1500",
+  review_count: "1500",
   rating: 4.5,
   categories: [{ title: "Terrorist group" }, { title: "Indian food" }],
 };
 
 export default function About(props) {
-  const { name, image, price, reviews, rating, categories } =
+  const { name, image, price, review_count, rating, categories } =
     props.route.params;
-  const formattedCategories = categories.map((cat) => cat.title).join("🉑 ");
+  const formattedCategories = categories.map((cat) => cat.title).join(" 🔂 ");
   const description = `${formattedCategories} ${
     price ? "." + price : ""
-  }. 🎫 . ${rating} . ⭐️ . (${reviews}+)`;
+  }. 🎫 . ${rating} . ⭐️ . (${review_count}+)`;
 
   return (
     <View>
