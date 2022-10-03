@@ -11,7 +11,7 @@
     "react-native": "0.68.2",
     "react-native-bouncy-checkbox": "^2.1.10",
     "react-native-elements": "^3.4.2",
-    "react-native-gesture-handler": "~2.2.1",
+    "react-native-gesture-handler": "~2.6.0",
     "react-native-google-places-api": "^1.0.2",
     "react-native-google-places-autocomplete": "^2.4.1",
     "react-native-reanimated": "~2.8.0",
